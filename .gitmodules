@@ -1,0 +1,3 @@
+[submodule "crashhandler/breakpad/src"]
+	path = crashhandler/breakpad/src
+	url = https://chromium.googlesource.com/breakpad/breakpad.git

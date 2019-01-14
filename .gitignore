@@ -110,5 +110,13 @@ moc_predefs.h
 qrc_mzroll.cpp
 object_script.pillowcore
 
+
+#breakpad
+*.gclient*
+
+#mac-specifc
+*.dSYM/*
+*.DS_Store
+
 #Feature Testing
 tests/featureTesting/results
