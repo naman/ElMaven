@@ -1,4 +1,8 @@
 TEMPLATE = subdirs
 
-SUBDIRS = breakpad 
+CONFIG += ordered
+
+SUBDIRS = breakpad
+
+win32: SUBDIRS += crashserver
 
