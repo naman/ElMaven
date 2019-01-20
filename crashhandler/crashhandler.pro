@@ -4,5 +4,5 @@ CONFIG += ordered
 
 SUBDIRS = breakpad
 
-win32: SUBDIRS += crashserver
+win32: SUBDIRS += crashserver crashreporter
 
