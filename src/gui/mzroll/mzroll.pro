@@ -28,8 +28,9 @@ TARGET = El_Maven_$$VERSION
 macx:TARGET=El_Maven_$$VERSION
 
 RC_FILE = mzroll.rc
-RESOURCES +=  mzroll.qrc \
-              $$top_srcdir/extras.qrc
+RESOURCES +=  mzroll.qrc
+
+mac: RESOURCES += $$top_srcdir/extras.qrc
 
 ICON = maven.icns
 
