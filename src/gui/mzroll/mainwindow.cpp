@@ -2,6 +2,7 @@
 #include "grouprtwidget.h"
 #include <QStandardPaths>
 #include "notificator.h"
+#include "videoplayer.h"
 #ifdef WIN32
 #include <windows.h>
 #endif
@@ -442,6 +443,9 @@ using namespace mzUtils;
 	connect(scatterDockWidget, SIGNAL(groupSelected(PeakGroup*)),
 			SLOT(setPeakGroup(PeakGroup*)));
 	pathwayWidgetController();
+
+
+    vidPlayer = new VideoPlayer(settings, nullptr);
 
 	addDockWidget(Qt::LeftDockWidgetArea, ligandWidget, Qt::Vertical);
 	addDockWidget(Qt::LeftDockWidgetArea, pathwayPanel, Qt::Vertical);
