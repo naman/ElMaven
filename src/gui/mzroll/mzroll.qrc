@@ -100,5 +100,7 @@
         <file>images/alignmentButton.png</file>
         <file>databases/KNOWNS.csv</file>
         <file>databases/SRM2.csv</file>
+        <file>images/quant.png</file>
+        <file>images/quantSelected.png</file>
     </qresource>
 </RCC>
