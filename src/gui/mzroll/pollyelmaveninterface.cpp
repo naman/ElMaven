@@ -585,7 +585,8 @@ QString PollyElmavenInterfaceDialog::_getRedirectionUrl(QString datetimestamp,
         if (!runRequestId.isEmpty()) {
             redirectionUrl =
                 _pollyIntegration->redirectionUiEndpoint(componentId,
-                                                         runRequestId);
+                                                         runRequestId,
+                                                         datetimestamp);
         } else {
             redirectionUrl = "";
         }
