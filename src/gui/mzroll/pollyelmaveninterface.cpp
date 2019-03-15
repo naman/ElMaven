@@ -466,7 +466,10 @@ QString PollyElmavenInterfaceDialog::_getProjectId()
             return "";
         }
 
-        return _pollyIntegration->createProjectOnPolly(newProjectEntry->text());
+        QString newProjectId =
+            _pollyIntegration->createProjectOnPolly(newProjectEntry->text());
+        _projectNameIdMap.insert(newProjectId, newProjectEntry->text());
+        return newProjectId;
     }
 
     _showErrorMessage("Error", "Please select at least one option");
