@@ -36,7 +36,6 @@ PollyElmavenInterfaceDialog::PollyElmavenInterfaceDialog(MainWindow* mw)
             SLOT(_enableExistingProjectUi()));
     connect(gotoPollyButton, SIGNAL(clicked(bool)), SLOT(_goToPolly()));
     connect(uploadButton, SIGNAL(clicked(bool)), SLOT(_uploadDataToPolly()));
-    connect(cancelButton, SIGNAL(clicked(bool)), SLOT(_cancel()));
     connect(this,
             SIGNAL(uploadFinished(bool)),
             SLOT(_performPostUploadTasks(bool)));
@@ -693,11 +692,6 @@ QStringList PollyElmavenInterfaceDialog::_prepareFilesToUpload(QDir qdir,
     }
 
     return filenames;
-}
-
-void PollyElmavenInterfaceDialog::_cancel()
-{
-    close();
 }
 
 void PollyElmavenInterfaceDialog::_logout()
